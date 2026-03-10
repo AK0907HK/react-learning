@@ -7,7 +7,7 @@ https://ja.react.dev/learn
 
 ## Progress
 
-- 00 Setup
+- 00 Quick Start
 - 01 JSX / Component
 - 02 Props
 - 03 State
