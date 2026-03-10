@@ -7,9 +7,10 @@ https://ja.react.dev/learn
 
 ## Progress
 
-- Day01 JSX / Component
-- Day02 Props
-- Day03 State
+- 00 Setup
+- 01 JSX / Component
+- 02 Props
+- 03 State
 
 ## Practice Apps
 
