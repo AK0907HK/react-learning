@@ -1,9 +1,7 @@
 # React Learning
 
-React公式チュートリアル
-https://ja.react.dev/learn
+React公式チュートリアル(https://ja.react.dev/learn)の学習内容
 
-業務時間内で1日30分学習し、成果をこのリポジトリにまとめます。
 
 ## Progress
 
