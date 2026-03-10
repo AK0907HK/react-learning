@@ -1,6 +1,7 @@
 # React Learning
 
-React公式チュートリアル(https://ja.react.dev/learn)の学習内容
+React公式チュートリアル(https://ja.react.dev/learn)
+の学習内容
 
 
 ## Progress
