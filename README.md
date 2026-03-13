@@ -16,3 +16,4 @@ React公式チュートリアル(https://ja.react.dev/learn)
 - Counter App
 - Todo App
 - Simple Dashboard
+-  - [ ] シートの1列目の値の前後に空白がある場合 → trimされてマッチする
