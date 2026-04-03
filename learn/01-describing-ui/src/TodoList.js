@@ -1,7 +1,7 @@
 const person = {
     name: 'Gregorio Y. Zara',
     theme: {
-        backgrondColor: 'black',
+        backgroundColor: 'black',
         color: 'pink'
     }
 };
