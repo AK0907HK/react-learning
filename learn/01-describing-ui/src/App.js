@@ -1,12 +1,23 @@
-import Gallery from "./Gallery";
-import TodoList from "./TodoList";
+import Avator from "./TodoList";
 
-export default function App() {
+function Card({children}) {
     return (
-        <>
-            <Gallery />
-            <hr />
-            <TodoList />
-        </>
+        <div className="card">
+            {children}
+        </div>
+    );
+}
+
+export default function Profile() {
+    return (
+        <Card>
+          <Avator
+            size={100}
+            person={{ 
+            name: 'Katsuko Saruhashi',
+            imageId: 'YfeOqp2'
+            }}                                        
+          />
+        </Card>
     );
 }
