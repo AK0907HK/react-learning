@@ -54,7 +54,7 @@ export { default } from "./learn/02-adding-interactivity/App";
 
 各チャプターのディレクトリには `App.js`（コンポーネントファイル）だけ置けばOKです。
 
-> **注意**: ポート3000はUKABU_01が使用中のため、learn配下は3001以降を使用する。
+> **注意**: ポート3000は既存プロジェクトが使用中のため、learn配下は3001以降を使用する。
 
 ## Progress
 
