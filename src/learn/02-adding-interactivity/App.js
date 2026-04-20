@@ -1,45 +1,52 @@
-import { useState } from "react";
-import { sculptureList } from './data.js';
+import Heading from './Heading.js';
+import Section from './Section.js';
 
-export default function Gallery() {
-    const [index,setIndex] = useState(0);
-    const [showMore,setShowMore] = useState(false);
-    const  hasNext = index < sculptureList.length - 1;   
-
-
-function handleNextClick() {
-    if (hasNext) {
-        setIndex(index + 1);
-    } else {
-        setIndex(0);
-    }
+export default function ProfilePage() {
+  return (
+    <Section>
+      <Heading>My Profile</Heading>
+      <Post
+        title="Hello traveller!"
+        body="Read about my adventures."
+      />
+      <Allposts />      
+    </Section>
+  );
 }
 
-  function handleMoreClick() {
-    setShowMore(!showMore);
-  }
+function Allposts() {
+  return (
+    <Section>
+      <Heading>Posts</Heading>
+      <Recentposts />      
+    </Section>
+  );
+}
 
-let sculpture = sculptureList[index];
-return  (
-    <>
-      <button onClick={handleNextClick}>
-        Next
-      </button>
-    <h2>
-       <i>{sculpture.name}</i>  
-       by  {sculpture.artist}
-    </h2>      
-    <h3>
-        ({index} of {sculptureList.length})
-    </h3>
-    <button onClick={handleMoreClick}>
-        {showMore ? `Hide` : `Show`} details
-    </button>
-      {showMore && <p>{sculpture.description}</p>}
-      <img
-        src={sculpture.url}
-        alt={sculpture.alt}
-      />
-    </>
+function Recentposts() {
+  return (
+   <Section>
+      <Heading>Recent Posts</Heading>
+      <Post
+        title="Flavors of Lisbon"
+        body="...those pastéis de nata!"      
+      />    
+      <Post
+        title="Buenos Aires in the rhythm of tango"
+        body="I loved it!"      
+      />   
+   </Section>
+
+  );
+}
+
+function Post({title,body}) {
+  return (
+    <Section isFancy={true}>
+      <Heading>
+        {title}
+      </Heading>
+      <p><i>{body}</i></p>
+    </Section>
   );
 }
